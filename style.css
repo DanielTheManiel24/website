@@ -1,0 +1,108 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sections: Donation & Subscription */
+.section {
+    height: 100vh; /* Each section takes up full viewport height */
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Background for Section 1 (Donation Page) */
+.donation-section {
+    background-image: url('machoooo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Background for Section 2 (Subscription Page) */
+.subscribe-section {
+    background-image: url('Subscribe El Macho.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Donation Text & Grey Box */
+.donation-text {
+    text-align: center;
+    color: orange !important;
+    padding: 15px;
+    background-color: rgba(84, 84, 84, 0.9) !important;
+    border-radius: 0;
+    width: 100vw;
+    min-height: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* General Button Styling */
+.donate-btn,
+.subscribe-btn {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Both buttons are circular */
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Overlapping Black Outline */
+.donate-btn {
+    clip-path: circle(73px); /* Overlapping 2px black outline */
+    background-color: black; /* Fills edges */
+}
+
+.subscribe-btn {
+    clip-path: circle(64px); /* Overlapping 11px black outline */
+    background-color: black; /* Fills edges */
+}
+
+/* Button Positioning */
+.donation-button,
+.youtube-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+/* Indicator Text Styling */
+.donate-indicator,
+.youtube-indicator {
+    position: absolute;
+    top: 100%; /* Places the text directly below the button */
+    left: 50%; /* Centers relative to button */
+    transform: translateX(-50%); /* Adjusts for perfect centering */
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+}
+
+.donate-indicator {
+    color: #5270fe; /* Blue for donation */
+}
+
+.youtube-indicator {
+    color: #e52d27; /* YouTube red */
+}
+
+.donate-indicator:hover,
+.youtube-indicator:hover {
+    text-decoration: underline;
+}
